@@ -30,6 +30,7 @@ def add_product(request):
     return render(request, 'add-product.html')
 
 
+@login_required
 def products(request):
     all_products = Product.objects.all()
     context = {"all_products": all_products}
