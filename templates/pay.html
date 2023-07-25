@@ -1,0 +1,14 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+    <div>
+        <h1 class="products-heading text-center text-white text-uppercase mt-3">Pay for {{ product.name }}</h1>
+        <form class="product-form" action="" method="post">
+            <p>{{ success }}</p>
+            {% csrf_token %}
+            <input value="{{ product.price }}" required readonly class="form-control my-input" type="text" name="p-price"><br>
+            <input required class="form-control my-input" type="text" name="c-phone" placeholder="Phone Number"><br>
+            <input class="btn btn-info" type="submit" value="Pay"><br>
+        </form>
+    </div>
+{% endblock %}

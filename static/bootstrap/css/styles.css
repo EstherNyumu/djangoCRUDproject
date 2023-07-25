@@ -1,4 +1,107 @@
-.product-form,.register-form{
-    width: 48%;
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+body{
+    background-color: #725ac1;
+    background-image: url("../../images/background-image.svg");
+    background-repeat: no-repeat;
+    background-size: 85%;
+}
+/*form styles*/
+.product-form,.register-form,.login-form{
+    width: 40%;
     margin: auto;
 }
+/*Navbar styling*/
+.logo{
+    color: white;
+    margin-right: 10px;
+    margin-top: -1em;
+}
+.logout{
+    display: flex;
+    align-items: flex-end;
+}
+.links{
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+}
+.nav-heading{
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+}
+
+/*home styling*/
+.home-heading{
+    font-family: 'Gasoek One', sans-serif;
+    font-size: 100px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+/*shop and products table styling*/
+.products-heading,.products-list{
+    font-family: 'Jost', sans-serif;
+}
+.list-heading{
+    font-size: 20px;
+}
+.products-list{
+    width: 80%;
+    border: none;
+    background-color: unset;
+    margin-top: 50px;
+}
+.products-table{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/*adding product styling*/
+.my-input{
+    /*background-color: unset;*/
+    border-top: unset;
+    border-right: unset;
+    border-left: unset;
+    border-radius: unset;
+}
+.product-form{
+    margin-top: 50px;
+}
+/*logout styling*/
+.logout-text1,.logout-text2{
+    font-family: 'Jost', sans-serif;
+    margin-top: 100px;
+}
+/*form styling*/
+.login-form,.register-form{
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+
+/*icons styling*/
+.twitter-icon,.facebook-icon,.instagram-icon{
+    display: flex;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+.twitter-icon:hover,.facebook-icon:hover,.instagram-icon:hover{
+    fill: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+.social-icons{
+    color: white;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+
+}
+/*!*changing placeholder colour*!*/
+/*::-webkit-input-placeholder{*/
+/*    color: white;*/
+/*    opacity: 1;*/
+/*}*/

@@ -1,0 +1,31 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+    <div>
+        <h1 class="products-heading text-white text-center">OUR SHOP</h1>
+    <div class="products-table">
+         <table class="products-list table table-dark table-hover">
+            <tr class="list-heading">
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Pay</th>
+            </tr>
+            {% for product in all_products %}
+                <tr>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.qtty }}</td>
+                    <td>{{ product.size }}</td>
+                    <td>{{ product.price }}</td>
+                    <td><a href="/pay/{{ product.id }}" class="btn btn-success">Pay</a></td>
+
+                </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+
+    </div>
+
+{% endblock %}

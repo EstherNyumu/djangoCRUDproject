@@ -3,14 +3,15 @@
 {% load crispy_forms_tags %}
 {% load crispy_forms_filters %}
 {% block content %}
-    <form  class="register-form" action="{% url 'login-page' %}" method="post">
-        {% csrf_token %}
-        <fieldset>
-            <legend class="border-bottom mb-4">Start Session</legend>
-            {{ form|crispy }}
-        </fieldset>
-        <div class="form-group">
-            <input class="btn btn-info" type="submit" value="Login">
-        </div>
-    </form>
+        <form  class="login-form" action="{% url 'login-page' %}" method="post">
+            {% csrf_token %}
+            <fieldset>
+                <legend class="border-bottom mb-4">Start Session</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <input class="btn btn-info" type="submit" value="Login">
+            </div>
+        </form>
+
 {% endblock %}
