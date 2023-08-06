@@ -80,15 +80,6 @@ body{
 }
 
 /*icons styling*/
-.twitter-icon,.facebook-icon,.instagram-icon{
-    display: flex;
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    fill: white;
-}
 .twitter-icon:hover,.facebook-icon:hover,.instagram-icon:hover{
     fill: hsl(300, 69%, 71%);
     border-color: hsl(300, 69%, 71%);
